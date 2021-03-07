@@ -9,7 +9,8 @@ namespace Hell_Dungeon_RPG
         static void Main(string[] args)
         {
             ArmorType1 armorType1 = new ArmorType1(100,4);
-            armorType1.GetArmorProtect();
+            CheckMyStuff();
+            Console.ReadLine();
         }
     }
 }

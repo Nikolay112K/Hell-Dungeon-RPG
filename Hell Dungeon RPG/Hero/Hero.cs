@@ -17,6 +17,8 @@ namespace Hell_Dungeon_RPG.Hero
         {
             ArmorType1Obj.GetArmorStrength();
             ArmorType1Obj.GetArmorProtect();
+            SwordType1Obj.GetSwordDamage();
+            SwordType1Obj.GetSwordStrength();
         }
     }
 }
