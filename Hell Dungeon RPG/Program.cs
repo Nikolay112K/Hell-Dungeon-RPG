@@ -10,7 +10,7 @@ namespace Hell_Dungeon_RPG
         static void Main(string[] args)
         {
             ArmorType1 armorType1 = new ArmorType1(100,4);
-            Hero.Hero Hero1 = new Hero.Hero();
+            Hero.Hero Hero1 = new Hero.Hero(new Armor(), new Armor());
             Hero1.CheckMyStuff();
             Console.ReadLine();
         }
