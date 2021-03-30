@@ -1,27 +1,28 @@
 ﻿using Hell_Dungeon_RPG.Equipment;
+using Hell_Dungeon_RPG.Characteristics;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Hell_Dungeon_RPG.Hero
+namespace Hell_Dungeon_RPG
 {
-    public class Hero
+    public class MainHero
     {
+        public int Health { get; set; }
         public ArmorType1 ArmorType1Obj { get; set; }
         public SwordType1 SwordType1Obj { get; set; }
         
-        public Hero(ArmorType1 armorType1, SwordType1 swordType1)
+        public MainHero(ArmorType1 armorType1, SwordType1 swordType1)
         {
+            Health = 100;
             this.ArmorType1Obj = armorType1;
             this.SwordType1Obj = swordType1;
 
         }
         public void CheckMyStuff()
         {
-            ArmorType1Obj.GetArmorStrength();
-            ArmorType1Obj.GetArmorProtect();
-            SwordType1Obj.GetSwordDamage();
-            SwordType1Obj.GetSwordStrength();
+            SwordType1Obj.GetSwordStats();
+            ArmorType1Obj.GetArmorStats();
         }
     }
 }

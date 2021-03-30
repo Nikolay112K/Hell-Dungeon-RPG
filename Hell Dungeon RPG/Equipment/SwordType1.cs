@@ -6,20 +6,18 @@ namespace Hell_Dungeon_RPG.Equipment
 {
     public class SwordType1
     {
-        private int SwordStrength = 100;
-        private int SwordDamage = 5;
-        public SwordType1(int swordStrength,int swordDamage)
+        public int SwordDamage;
+        public SwordType1()
         {
-            this.SwordDamage = swordDamage;
-            this.SwordStrength = swordStrength;
+            SwordDamage = 4;
         }
-        public void GetSwordStrength()
+        public void GetSwordStats()
         {
-            Console.WriteLine(SwordStrength);
-        }
-        public void GetSwordDamage()
-        {
-            Console.WriteLine(SwordDamage);
+            Console.BackgroundColor = ConsoleColor.Red;
+
+            Console.WriteLine($"Ваша зубочистка имеет {SwordDamage} урона.");
+
+            Console.ResetColor();
         }
     }
 }

@@ -6,20 +6,19 @@ namespace Hell_Dungeon_RPG.Equipment
 {
     public class ArmorType1
     {
-        private int ArmorStrength = 100;
-        private int ArmorProtect = 4;
-        public ArmorType1(int armorStrength, int armorProtect)
+        public int ArmorStrength;
+        public ArmorType1()
         {
-            this.ArmorProtect = armorProtect;
-            this.ArmorStrength = armorStrength;
+            ArmorStrength = 100;
         }
-        public void GetArmorStrength()
+        public void GetArmorStats()
         {
-            Console.WriteLine(ArmorStrength);
-        }
-        public void GetArmorProtect()
-        {
-            Console.WriteLine(ArmorProtect);
+            Console.BackgroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.Black;
+
+            Console.WriteLine($"Ваши портки имеют {ArmorStrength} прочности.");
+
+            Console.ResetColor();
         }
     }
 }

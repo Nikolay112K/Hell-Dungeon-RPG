@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hell Dungeon RPG", "Hell Dungeon RPG\Hell Dungeon RPG.csproj", "{0F98C078-8285-4DAD-839A-87079D37358A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hell Dungeon RPG", "Hell Dungeon RPG\Hell Dungeon RPG.csproj", "{0F98C078-8285-4DAD-839A-87079D37358A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
